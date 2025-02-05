@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  color: #000;
   background-color: rgba(255, 255, 255); /* Slight transparency */
   max-width: 1300px; /* Limit width */
   max-height: 800px; /* Limit height */

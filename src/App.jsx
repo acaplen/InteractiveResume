@@ -28,13 +28,14 @@ function App() {
       <div className="background">
         
         <div className="container">
-          
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project1" element={<Project1 />} />
-            <Route path="/project2" element={<Project2 />} />
-            <Route path="/project3" element={<Project3 />} />
-          </Routes>
+          <Router basename="/InteractiveResume">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project1" element={<Project1 />} />
+              <Route path="/project2" element={<Project2 />} />
+              <Route path="/project3" element={<Project3 />} />
+            </Routes>
+          </Router>
           
         {/* {component} */}
         </div>
