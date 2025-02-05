@@ -7,7 +7,7 @@ export default function Navbar () {
         <nav className="nav">
             <Link to="/InteractiveResume/" className="site-title">Alex Caplen Resume</Link>
             <ul>
-                <CustomLink to="/InteractiveResume/project1">Project 1</CustomLink>
+                <CustomLink to="/InteractiveResume/project1">Career Objectives</CustomLink>
                 <CustomLink to="/InteractiveResume/project2">Project 2</CustomLink>
                 <CustomLink to="/InteractiveResume/project3">Project 3</CustomLink>
                 
