@@ -5,11 +5,11 @@ export default function Navbar () {
     
     return (
         <nav className="nav">
-            <Link to="/" className="site-title">Alex Caplen Resume</Link>
+            <Link to="/InteractiveResume/" className="site-title">Alex Caplen Resume</Link>
             <ul>
-                <CustomLink to="/project1">Project 1</CustomLink>
-                <CustomLink to="/project2">Project 2</CustomLink>
-                <CustomLink to="/project3">Project 3</CustomLink>
+                <CustomLink to="/InteractiveResume/project1">Project 1</CustomLink>
+                <CustomLink to="/InteractiveResume/project2">Project 2</CustomLink>
+                <CustomLink to="/InteractiveResume/project3">Project 3</CustomLink>
                 
             </ul>
         </nav>

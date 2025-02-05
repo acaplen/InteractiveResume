@@ -4,7 +4,7 @@ import Project1 from "./pages/Project1"
 import Project2 from "./pages/Project2"
 import Project3 from "./pages/Project3"
 import Home from "./pages/Home"
-import { Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
   // let component
@@ -28,14 +28,14 @@ function App() {
       <div className="background">
         
         <div className="container">
-          <Router basename="/InteractiveResume">
+          
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/project1" element={<Project1 />} />
-              <Route path="/project2" element={<Project2 />} />
-              <Route path="/project3" element={<Project3 />} />
+              <Route path="/InteractiveResume/" element={<Home />} />
+              <Route path="/InteractiveResume/project1" element={<Project1 />} />
+              <Route path="/InteractiveResume/project2" element={<Project2 />} />
+              <Route path="/InteractiveResume/project3" element={<Project3 />} />
             </Routes>
-          </Router>
+          
           
         {/* {component} */}
         </div>
