@@ -1,21 +1,24 @@
 .container {
-  height: 90vh; /* Adjusted so it doesn't take full height */
-  width: 90vw; /* Ensuring it doesn’t exceed background width */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  color: #000;
-  background-color: rgba(255, 255, 255); /* Slight transparency */
-  max-width: 1300px; /* Limit width */
-  max-height: 800px; /* Limit height */
-  position: absolute; /* Allows it to be positioned inside .background */
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers it */
-  padding: 20px;
-  border-radius: 10px;
-}
+    min-height: 30vh; /* At least 90% of viewport height */
+    width: 90vw; /* Responsive width */
+    max-width: 1300px; /* Prevents excessive width */
+    box-sizing: border-box;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    overflow: auto; /* Enables scrolling within the container */
+    padding: 20px;
+    border-radius: 10px;
+  
+    /* Centering with Flexbox */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    /* align-items: center; */
+    justify-content: flex-start; /* Allow content to push down */
+  
+    /* Remove absolute positioning */
+    position: relative;
+    margin: 5vh auto; /* Keeps it centered */
+  }  
 
 @keyframes move {
     100% {
@@ -23,15 +26,24 @@
     }
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }  
+
 .background {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 100vh;
-    top: 0;
+    height: 100%;
+    top: 60px;
     left: 0;
     background: #000000;
     overflow: hidden;
     z-index: -1;
+    min-height: 100vh;
 }
 
 .background span {

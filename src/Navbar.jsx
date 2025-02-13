@@ -1,23 +1,34 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import './Navbar.css'
+import linkedinIcon from "./assets/LinkedIn.png";
+import BitbucketIcon from "./assets/Bitbucket.png";
 
 export default function Navbar () {
     
     return (
         <nav className="nav">
-            <Link to="/InteractiveResume/" className="site-title">Alex Caplen Resume</Link>
+            
+            <Link to="/InteractiveResume/" className="site-title">Alex Caplen</Link>
             <ul>
-                <CustomLink to="/InteractiveResume/project1">Career Objectives</CustomLink>
+                <CustomLink to="/InteractiveResume/project1">Project 1</CustomLink>
                 <CustomLink to="/InteractiveResume/project2">Project 2</CustomLink>
-                <CustomLink to="/InteractiveResume/project3">Project 3</CustomLink>
-                
+                <CustomLink to="/InteractiveResume/ContactInfo">Contact</CustomLink>
+                <li>
+                    <a href="https://www.linkedin.com/in/alex-caplen" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinIcon} alt="LinkedIn" width="30" height="30" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bitbucket.org/arc21a/homepage/src/main/" target="_blank" rel="noopener noreferrer">
+                        <img src={BitbucketIcon} alt="Bitbucket" width="30" height="30" />
+                    </a>
+                </li>
             </ul>
         </nav>
     )
 }
 
 function CustomLink({ to, children, ...props}) {
-    // const path = window.location.pathname
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
