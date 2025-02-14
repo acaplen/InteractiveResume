@@ -25,6 +25,12 @@ body {
     z-index: 1000; /* Ensures it stays on top */
 }
 
+.headshot {
+    max-height:50px ;
+    border-radius: 50%;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
 
 .nav ul {
     padding: 0;

@@ -2,6 +2,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import './Navbar.css'
 import linkedinIcon from "./assets/LinkedIn.png";
 import BitbucketIcon from "./assets/Bitbucket.png";
+import headshot from "./assets/headshotIcon512.png"
 
 export default function Navbar () {
     
@@ -22,6 +23,11 @@ export default function Navbar () {
                     <a href="https://bitbucket.org/arc21a/homepage/src/main/" target="_blank" rel="noopener noreferrer">
                         <img src={BitbucketIcon} alt="Bitbucket" width="30" height="30" />
                     </a>
+                </li>
+                <li>
+                    <Link to="/InteractiveResume/" className="site-title">
+                        <img className='headshot' src={headshot} alt="Description of image" />
+                    </Link>
                 </li>
             </ul>
         </nav>
