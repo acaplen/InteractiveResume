@@ -78,9 +78,9 @@ export default function Home() {
                 <li>SharePoint Development: Power BI, Power Automate, Power Apps, Power Fx.</li>
             </ul>
 
-            <div className="download-section">
+            {/* <div className="download-section">
             <a 
-                href={resumePdf} 
+                    href={resumePdf} 
                 download="AlexCaplenResume.pdf" 
                 className="download-link"
                 onClick={handleDownloadClick}
@@ -88,7 +88,7 @@ export default function Home() {
                 Click here to download my resume (PDF)
             </a>
             <button onClick={handleDownloadClick}>Test Button</button>
-            </div>
+            </div> */}
         </div>
     );
 }
