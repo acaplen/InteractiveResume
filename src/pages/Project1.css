@@ -1,0 +1,108 @@
+/* Home.css */
+.home-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.home-container h1 {
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0px 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;  /* Ensure it's positioned */
+    z-index: 999;  /* Bring it on top of other elements */
+    pointer-events: auto;
+}
+
+.home-container h2 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    margin-bottom: 5px;
+}
+
+.home-container h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.home-container ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.home-container ul li::before {
+    content: '• ';
+    color: #0077cc;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.home-container .image-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-container .image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.download-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;  /* Ensure it's positioned */
+    z-index: 999;  /* Bring it on top of other elements */
+    pointer-events: auto;
+}
+
+/* Added for date section layout */
+.home-container .h2-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.home-container .h2-container h2 {
+    margin: 0;
+}
+
+.home-container .h2-container .date {
+    font-size: 1rem;
+    color: gray;
+    font-style: italic;
+    text-align: right;
+}

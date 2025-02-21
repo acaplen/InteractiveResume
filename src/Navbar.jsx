@@ -11,8 +11,8 @@ export default function Navbar () {
             
             <Link to="/InteractiveResume/" className="site-title">Alex Caplen</Link>
             <ul>
-                <CustomLink to="/InteractiveResume/project1">Project 1</CustomLink>
-                <CustomLink to="/InteractiveResume/project2">Project 2</CustomLink>
+                <CustomLink to="/InteractiveResume/project1">FSU Projects</CustomLink>
+                <CustomLink to="/InteractiveResume/project2">Work Projects</CustomLink>
                 <CustomLink to="/InteractiveResume/ContactInfo">Contact</CustomLink>
                 <li>
                     <a href="https://www.linkedin.com/in/alex-caplen" target="_blank" rel="noopener noreferrer">

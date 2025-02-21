@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function App() {
   return (
     <div>
+      
       <Navbar />
       <div className="background">
         
@@ -20,6 +21,8 @@ function App() {
               <Route path="/InteractiveResume/project2" element={<Project2 />} />
               <Route path="/InteractiveResume/ContactInfo" element={<ContactInfo />} />
             </Routes>
+
+            
             
         </div>
         <span></span>
